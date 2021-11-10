@@ -16,6 +16,11 @@ let setsRun = 1;
 let exerciseNum = 0;
 let currentPhase;
 
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+}
+
 //initialize your timer section
 window.onload = applySettings;
 
