@@ -1,0 +1,205 @@
+/*
+Rich Black #011627
+Baby Powder #fdfffc
+Tiffany Blue #2ec4b6
+Rose Madder #e71d36
+Orange Peel #ff9f1c rgba(255, 159, 28, 0.3)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+/*
+font-family: 'Nunito', sans-serif;
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-family: 'Nunito', sans-serif;
+    color: #011627;
+}
+
+#banner{
+    width: 100%;
+    height: 40px;
+    background: #ff9f1c;
+}
+
+#logo{
+    display: flex;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+#logo-image{
+    width: 40px;
+    height: 40px;
+}
+
+#title{
+    margin: 0;
+    line-height: 40px;
+    font-weight: 500;
+    color: #011627;
+    font-size: 30px;
+}
+
+#center{
+    width: 340px;
+    height: 40px;
+    margin: auto;
+}
+
+.options{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #011627;
+}
+
+#wrapper{
+    display: grid;
+    margin: auto;
+    width: 90%;
+    grid-template-areas: 'HIIT HIIT' 'choices timer';
+    grid-template-columns: 40% 60%;
+    grid-gap: 20px;
+}
+#timer{
+    width: 100%;
+    grid-area: timer;
+}
+
+#choices{
+    grid-area: choices;
+}
+
+#HIIT-timer{
+    grid-area: HIIT;
+}
+
+#add-cooldown{
+    display: block;
+}
+
+#added-cooldown{
+    display: none;
+}
+
+#add-warmup{
+    display: block;
+}
+
+#added-warmup{
+    display: none;
+}
+
+.button{
+    background-color: #ff9f1c;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 3px 3px 5px #bbb;
+    margin-top: 20px;
+}
+
+.button2{
+    background-color: #ff9f1c;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 3px 3px 5px #bbb;
+}
+
+.button3{
+    background-color: #ff9f1c;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 3px 3px 5px #bbb;
+}
+
+h1{
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.input{
+    border: 1px solid #011627;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #bbb;
+    color: #666;
+}
+
+i{
+    color: #78d1c8;
+}
+
+.durations{
+    margin-top: 0;
+}
+
+#timer-layout{
+    display: grid;
+    grid-template-areas: 'exercise exercise exercise exercise' 'countdown countdown countdown countdown' 'set set exerciseNum exerciseNum' 'start-stop start-stop reset reset';
+    width: 90%;
+    height: 350px;
+    background: rgba(255, 159, 28, 0.3);
+    padding-top: 30px;
+    border-radius: 10px;
+    border: 10px solid #ff9f1c;
+}
+
+#exercise{
+    grid-area: exercise;
+    text-align: center;
+    font-size: 40px;
+}
+
+#countdown{
+    grid-area: countdown;
+    text-align: center;
+    font-size: 70px;
+    color: #78d1c8;
+    font-weight: 900;
+}
+
+#set{
+    grid-area: set;
+    text-align: center;
+    font-size: 25px;
+}
+
+#exercise-num{
+    grid-area: exerciseNum;
+    text-align: center;
+    font-size: 25px;
+}
+
+#start-stop{
+    grid-area: start-stop;
+    text-align: center;
+}
+
+#reset{
+    grid-area: reset;
+    text-align: center;
+}
+
+@media screen and (min-width: 780px){
+    #wrapper{
+        display: grid;
+        margin: auto;
+        width: 90%;
+        grid-template-areas: 'HIIT choices timer';
+        grid-template-columns: 40% 30% 30%;
+        grid-gap: 20px;
+    }
+}
